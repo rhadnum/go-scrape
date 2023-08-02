@@ -20,7 +20,6 @@ func main() {
 	pages := []Page{}
 	
 	c.OnRequest(func(r *colly.Request) {
-		fmt.Println("Visiting", r.URL)
 		currentLink = r.URL.String()
 	})
 
